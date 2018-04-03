@@ -341,6 +341,28 @@ $(document).ready( function() {
 				google.maps.event.addListener(marker, 'click', function () {
 			infowindow.open(map, marker);
 		});*/
+		 var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                loop: true,
+                nav: true,
+                margin: 8,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 4
+                  }, 
+                }
+              });
+              owl.on('mousewheel', '.owl-stage', function(e) {
+                if (e.deltaY > 0) {
+                  owl.trigger('next.owl');
+                } else {
+                  owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+              });
 	});
 	
 	$(document).ready(function(){$("#logo a, a#logo, #skenav a").each(function(){$(this).attr("href",$(this).attr("href")+"?no_redirect=true");});});

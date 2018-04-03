@@ -9,6 +9,8 @@
 	<link rel='stylesheet' href='assets/css/fontawesome-all.min.css?ver=5.0.9' type='text/css' media='all' />
 	<link rel='stylesheet' href='assets/css/style.css?ver=1.0.0' type='text/css' media='all' />
 	<link rel='stylesheet' href='assets/css/responsive.css?ver=1.0.0' type='text/css' media='all' />
+	<link rel='stylesheet' href='assets/css/owl.carousel.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='assets/css/owl.theme.default.css' type='text/css' media='all' />
 	<script type='text/javascript' src='assets/js/jquery-lib.js'></script>
 	
 	</head>
@@ -352,34 +354,24 @@
 										<div class="container">
 						<div class="row">
 								<!-- Project Portfolio -->
-	<ul class="list-inline" id="filter">
-		<li><a class="active" data-group="all">All</a></li>
-		<li><a href="JavaScript:void(0);" data-group="design">Core PHP</a></li>
-		<li><a href="JavaScript:void(0);" data-group="design">Core JAVA</a></li>
-		<li><a href="JavaScript:void(0);" data-group="identitly">CMS</a></li>
-		<li><a href="JavaScript:void(0);" data-group="interface">Framework</a></li>
-	</ul>
+	<div class="large-12 columns">
+	    
+          <div class="owl-carousel owl-theme">
+		  <?php for($i=0; $i<8; $i++){ ?>
+            <div class="item">
+              <div class="thumbnail">
+				<a href="assets/images/ramesh-psp.jpg" target="_blank">
+				  <img src="assets/images/ramesh-psp.jpg" alt="Lights" style="width:100%">
+				  <div class="caption">
+					<p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+				  </div>
+				</a>
+			  </div>
+            </div>
+			<?php } ?>
+          </div>
 		
-			<div id="grid" class="wow fadeInUp">
-									<div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all","design","web"]'>
-						<div class="portfolio-bg">
-							<div class="portfolio">
-								<img src="http://sketchthemes.com/samples/xperson-personal-portfolio-demo/wp-content/uploads/sites/98/2016/05/xperson-works-8-800x540.jpg" alt="Portfolio Title">
-								<div class="portfolio-overlay">
-									<ul class="links text-center">
-										<li class="hex"><a class="image-link" href="http://sketchthemes.com/samples/xperson-personal-portfolio-demo/wp-content/uploads/sites/98/2016/05/xperson-works-8-800x540.jpg"><i class="fa fa-search-plus"></i></a>
-										</li>
-										<li class="hex"><a href="https://sketchthemes.com/samples/xperson-personal-portfolio-demo/portfolio/portfolio-title-8/"><i class="fa fa-link"></i></a></li><!-- /.links -->
-									</ul>
-									<div class="portfolio-info">
-										<h3>Portfolio Title</h3>
-									</div><!-- /.portfolio-info -->
-								</div>
-							</div><!-- /.portfolio -->
-						</div><!-- /.portfolio-bg -->
-					</div><!-- /.portfolio-item -->													
-			</div>
-
+		</div>  
 		<!-- Project Portfolio -->
 	
 						</div>
@@ -465,6 +457,8 @@
 		<div class="hex"><a href="#xperson-top"><i class="fa fa-angle-up"></i></a></div>
 	</div>
 <script type='text/javascript' src='assets/js/bootstrap.js'></script>
+<script type='text/javascript' src='assets/js/owl.carousel.js'></script>
+<script type='text/javascript' src='assets/js/owl.carousel-jquery.mousewheel.min.js'></script>
 <script type='text/javascript' src='assets/js/scripts.js'></script>
 
 </body>
